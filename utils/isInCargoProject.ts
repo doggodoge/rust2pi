@@ -6,7 +6,6 @@ async function isInCargoProject(workingDir: string): Promise<boolean> {
   });
   const decoder = new TextDecoder("utf-8");
   const output = await cargoProcess.output();
-  console.log(decoder.decode(output));
   return decoder.decode(output) === '{"success":"true"}\n';
 }
 

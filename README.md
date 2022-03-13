@@ -23,7 +23,7 @@ use C bindings etc. unless it supports cross compilation.
 ## Usage
 
 ```shell
-deno run --allow-run --allow-read --allow-write path/to/main.ts username@1.2.3.4
+deno run --allow-run --allow-read --allow-write path/to/main.ts -- username@1.2.3.4
 ```
 
 Best to create a script for this with an absolute path to `main.ts`.

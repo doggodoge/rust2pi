@@ -73,7 +73,7 @@ async function build(remote: string) {
   const configPath = "./.cargo/config.toml";
   const appName = getAppName("./Cargo.toml") ?? "app";
   const appBinary = `./target/aarch64-unknown-linux-musl/release/${appName}`;
-  // TODO: Find a way to avoid using this deprecated function.
+  // TODO(#3): Find a way to avoid using this deprecated function.
   if (!existsSync(configPath)) {
     createCargoConfig(configPath);
   }

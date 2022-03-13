@@ -82,7 +82,7 @@ async function build(remote: string) {
   console.log(yellow(bold(`Building app ${appName}`)));
   if ((await buildProcess.status()).success) {
     await stripAndUpload(appName, appBinary, remote);
-    console.log(green(bold(`Uploaded to ~/${appName} on pi@${remote}`)));
+    console.log(green(bold(`Uploaded to ~/${appName} on ${remote}`)));
   } else {
     console.error(red(bold(`Failed to build app ${appName}`)));
   }

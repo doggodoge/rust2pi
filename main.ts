@@ -11,7 +11,7 @@ import {
 async function rust2pi() {
   const remote = Deno.args.at(1) ?? Deno.exit(1);
 
-  const inCargoProject = await isInCargoProject();
+  const inCargoProject = await isInCargoProject(Deno.cwd());
   if (!inCargoProject) {
     console.error(red(bold("You are not in a cargo project.")));
     Deno.exit(1);

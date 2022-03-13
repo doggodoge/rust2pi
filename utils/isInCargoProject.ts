@@ -1,6 +1,6 @@
-async function isInCargoProject(workingDir?: string): Promise<boolean> {
+async function isInCargoProject(workingDir: string): Promise<boolean> {
   const cargoProcess = Deno.run({
-    cwd: workingDir ?? Deno.cwd(),
+    cwd: workingDir,
     cmd: ["cargo", "verify-project"],
     stdout: "piped",
   });

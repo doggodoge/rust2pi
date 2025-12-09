@@ -1,3 +1,6 @@
+> [!WARNING]
+> Archived on GitHub and moved to https://git.sr.ht/~gary_moore/rust2pi
+
 # rust2pi
 
 Deno script to set up a rust project for cross compilation for RPi if required,
